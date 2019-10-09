@@ -1,0 +1,21 @@
+{
+    "name": "domainesia/backend-2019a",
+    "description": "Backend test repository.",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "license": "Proprietary",
+    "autoload": {
+        "psr-4": {
+            "DNLib\\": "lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hernawan Fa'iz Abdillah",
+            "email": "faiz@domainesia.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
