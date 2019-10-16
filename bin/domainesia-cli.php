@@ -1,11 +1,11 @@
-<?php
+<?php 
+require_once __DIR__.'/../vendor/autoload.php';
 
-function main(array $domains)
-{
-    // TODO:
-}
+use Symfony\Component\Console\Application;
 
-$domains = [];
-// TODO: Get domain list
+$application = new Application('domainesia', '1.0.0');
 
-main($domains);
+// Commands
+$application->add(new \DNApp\Commands\BuyDomainCommand);
+
+$application->run();

@@ -3,11 +3,13 @@
     "description": "Backend test repository.",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^8.4"
+        "phpunit/phpunit": "^8.4",
+        "mockery/mockery": "^1.2"
     },
     "license": "Proprietary",
     "autoload": {
         "psr-4": {
+            "DNApp\\": "app/",
             "DNLib\\": "lib/"
         }
     },
@@ -17,5 +19,8 @@
             "email": "faiz@domainesia.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^4.3"
+    }
 }
