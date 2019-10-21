@@ -1,6 +1,6 @@
 <?php
 
-function main(array $domains)
+function processBatchDomainOrder(array $domains)
 {
     // TODO:
 }
@@ -8,4 +8,4 @@ function main(array $domains)
 $domains = [];
 // TODO: Get domain list
 
-main($domains);
+processBatchDomainOrder($domains);
