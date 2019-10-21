@@ -6,8 +6,10 @@ This repository is a place for both the quests and your answers.
 
 * Please fork / clone this repository, then modify according to the quests given. 
 * You may re-upload into different repository service (e.g. GitHub, GitLab, or your own).
-  **Please be sure to give invitation access to dev@domainesia.com.**
+  **Please be sure to give invitation access to faiz@domainesia.com.**
 * After uploading, please reply our original hiring test email with your repository link.
+* Finishing all quests would be desirable, but you may still send incomplete work
+  but then you need to work hard in convincing us in the next test.
 
 
 * If you need to answer questions by text or explain something, place yours 
@@ -61,12 +63,15 @@ TOTAL                        Rp 546.000
   or at least accompany the code with runnable tests. A `spec/` folder has been prepared for you.
 
 ### 2. Git Decision
-Please git-commit your result into this repository (normally on `master` branch).
+Please git-commit your result into this repository (on `master` branch).
 
-For preparation for the live test, please take a look at `feature/oop` branch.
-Your task is to incorporate your changes in `master` into `feature/oop`.
+For preparation for the live test, please take a look at `feature/webapi` branch.
+Your task is to incorporate your changes in `master` into `feature/webapi`.
 Afterward, please write what you've done in [ANSWER.md](./ANSWER.md).
 
-### 3. Server Deployment
+### 3. Setup Simple API
 Before proceeding, let's thinking about deployment. This app will be converted
-into HTTP API that will handle thousands of request per day.
+into HTTP API that will handle thousands of request per day. 
+Can you setup a HTTP REST API that can response to path change and process the request
+accordingly? One of the route should be able to process something like `/order?domains[]=hello.com&domains[]=world.com` 
+and return above invoice in JSON format.
