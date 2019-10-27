@@ -69,9 +69,8 @@ For preparation for the live test, please take a look at `feature/webapi` branch
 Your task is to incorporate your changes in `master` into `feature/webapi`.
 Afterward, please write what you've done in [ANSWER.md](./ANSWER.md).
 
-### 3. Setup Simple API
-Before proceeding, let's thinking about deployment. This app will be converted
-into HTTP API that will handle thousands of request per day. 
-Can you setup a HTTP REST API that can response to path change and process the request
-accordingly? One of the route should be able to process something like `/order?domains[]=hello.com&domains[]=world.com` 
-and return above invoice in JSON format.
+4. Tell us.
+Have you ever implemented something new in your project? It is either new to you
+or your company or even this world. Tell us that implementation story,
+from a bit of background, process, and that implementation as a solution.
+Please tell us as if we're an IT executive, know some IT but not that specific.
