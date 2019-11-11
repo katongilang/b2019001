@@ -70,7 +70,7 @@ Your task is to incorporate your changes in `master` into `feature/webapi`.
 Afterward, please write what you've done in [ANSWER.md](./ANSWER.md).
 
 4. Tell us.
-Have you ever implemented something new in your project? It is either new to you
-or your company or even this world. Tell us that implementation story,
-from a bit of background, process, and that implementation as a solution.
+Have you ever implemented something new in your project? It is either new to you 
+or your company or even this world. Tell us that implementation story, 
+from a bit of background, process, and that new things along with its impact. 
 Please tell us as if we're an IT executive, know some IT but not that specific.
