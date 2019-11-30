@@ -1,5 +1,5 @@
 <?php 
-namespace DNLib;
+//namespace DNLib;
 
 class DomainWhois
 {
