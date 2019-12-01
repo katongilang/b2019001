@@ -8,6 +8,12 @@ function processBatchDomainOrder(array $domains)
 	echo "==========================================================\n";
 	echo "# INVOICE\n\n";
 
+	$b = array_map("reverse_domain", $domains); // sample : katon.com -> com.katon
+	sort($b); // simple sort low to high
+	# print_r($b);
+	$c = array_map("reverse_domain", $b); // sample : com.katon -> katon.com
+	# print_r($c);
+
 	for($i=0; $i<sizeof($domains); $i++){
 		$harga[$i] = harga_extension($domains[$i]); // Insert harga to array
 		echo $domains[$i]."\t \t \t".$harga[$i]."\n";
@@ -17,6 +23,12 @@ function processBatchDomainOrder(array $domains)
 	echo "TOTAL \t \t \t \t Rp ".array_sum($harga); // SUM all harga
 	echo "\n\n==========================================================";
 }
+
+function reverse_domain($s) {
+	# explode by dot -> reverse -> implode by dot
+	return implode(".", array_reverse(explode(".", $s)));
+}
+
 
 function harga_extension($domain){
 	if (preg_match('/(.*?)\.com$/', $domain)) {
@@ -50,8 +62,10 @@ function main(){
 	while ($loop_status == true) {
 		# GET input from user per line
 		$input = readline("=>");
+		
 		$ketersediaan = $obj->isAvailable($input); // Check random domain availability
 		$split = explode(".",$input); // To split between name domain and extension 
+
 		# Validation
 		if ($input == 'ok' && sizeof($domains) == null){
 			echo "[TIDAK VALID] Silahkan Isi! Tidak boleh kosong\n";
