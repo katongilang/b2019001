@@ -8,7 +8,7 @@
 info : 
 - Untuk melanjutkan ke proses INVOICE harus Type "ok"
 - Karena tidak menggunakan PHPUNIT untuk TDD, jadi test nya manual :
-```
+
 TestCase : TC01 Validasi
 | INPUT | OUTPUT | KETERANGAN |
 | --- | --- | --- |
@@ -19,14 +19,14 @@ TestCase : TC01 Validasi
 | `katon gilang.net` | "[TIDAK VALID] Domain hanya boleh mengandung karakter alphanumerik, dot, dan dash!" |		Salah format domain |
 | `katongilang.xxx` | "[TIDAK VALID] Bukan extension domain yang benar!" | tld tidak sesuai |
 | `[namadomain].[tld]` | "[TIDAK VALID] Domain telah terdaftar" | domain random utk avaliablity |
-```
-```
+
+
 Test Case : TC02 Pricing
 Pre-conditions : Proses setelah input domain
 | INPUT | OUTPUT | KETERANGAN |
 | --- | --- | --- |
 | `[namadomain].[tld]` | Muncul Invoice list harga | syarat: harus [VALID] |
-```
+
 
 
 # 1. Short Quiz
