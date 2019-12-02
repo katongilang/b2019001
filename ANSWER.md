@@ -10,29 +10,33 @@ info :
 - Karena tidak menggunakan PHPUNIT untuk TDD, jadi test nya manual :
 ```
 TestCase : TC01 Validasi
-INPUT 							OUTPUT 											KETERANGAN
-(null)				 "[TIDAK VALID] Silahkan Isi! Tidak boleh kosong" 			Tanpa Input
-ka					 "[TIDAK VALID] Karakter tidak cukup!"						< 3 character
-katongilangbagas.com "[TIDAK VALID] Anda mengetik terlalu banyak!"				> 15 character
-katongilang 		 "[TIDAK VALID] Domain harus memiliki ekstensi!"			Tanpa extension tld
-katon gilang.net     "[TIDAK VALID] Domain hanya boleh mengandung karakter 		Salah format domain
- 					  alphanumerik, dot, dan dash!"
-katongilang.xxx 	 "[TIDAK VALID] Bukan extension domain yang benar!"			tld tidak sesuai
-[namadomain].[tld]   "[TIDAK VALID] Domain telah terdaftar"						domain random utk avaliablity
+| INPUT | OUTPUT | KETERANGAN |
+| --- | --- | --- |
+| `(null)` | "[TIDAK VALID] Silahkan Isi! Tidak boleh kosong" | Tanpa Input |
+| `ka` | "[TIDAK VALID] Karakter tidak cukup!" | < 3 character |
+| `katongilangbagas.com` | "[TIDAK VALID] Anda mengetik terlalu banyak!" | > 15 character |
+| `katongilang` | "[TIDAK VALID] Domain harus memiliki ekstensi!"		|	Tanpa extension tld |
+| `katon gilang.net` | "[TIDAK VALID] Domain hanya boleh mengandung karakter alphanumerik, dot, dan dash!" |		Salah format domain |
+| `katongilang.xxx` | "[TIDAK VALID] Bukan extension domain yang benar!" | tld tidak sesuai |
+| `[namadomain].[tld]` | "[TIDAK VALID] Domain telah terdaftar" | domain random utk avaliablity |
 ```
 ```
 Test Case : TC02 Pricing
 Pre-conditions : Proses setelah input domain
-INPUT 							OUTPUT 											KETERANGAN
-[namadomain].[tld] 			Muncul Invoice list harga						syarat: harus [VALID]
+| INPUT | OUTPUT | KETERANGAN |
+| --- | --- | --- |
+| `[namadomain].[tld]` | Muncul Invoice list harga | syarat: harus [VALID] |
 ```
 
 
 # 1. Short Quiz
 - What is the different between session and cookie?
 ```
-1. Session = session biasanya saya gunakan untuk login, session akan disimpan di sisi server, session akan hilang jika terjadi proses unset ataupun destroy (ketika logout dari aplikasi). Session bisa menyimpan banyak variable seperti username, id, name, dll. Session cenderung lebih aman.
-2. Cookie = lain dengan session, sepemahaman saya cookie lebih berpatokan dengan waktu expirednya dan biasanya disimpan bukan di server tetapi di browser client.
+1. Session = session biasanya saya gunakan untuk login, session akan disimpan di sisi server, session akan hilang
+jika terjadi proses unset ataupun destroy (ketika logout dari aplikasi). Session bisa menyimpan banyak variable
+seperti username, id, name, dll. Session cenderung lebih aman.
+2. Cookie = lain dengan session, sepemahaman saya cookie lebih berpatokan dengan waktu expirednya dan biasanya
+disimpan bukan di server tetapi di browser client.
 ```
 
 - What is the different between cURL in PHP and curl in command line?
@@ -77,6 +81,4 @@ saya harus menanyakan langsung ke pakarnya.
 ,biasanya saya membuat Web sederhana dengan fungsi CRUD, namun pada projek ini saya mengharuskan menerima dan,
 menampilkan data dari Microcontroller dan mengirim perintah menuju Microcontroller yang mana itu adalah sesuatu
 yang baru.
-===========
-
 ```
