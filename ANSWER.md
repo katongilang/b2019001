@@ -58,7 +58,8 @@ cUrl KURS klikbca.com
 melakukakan request (selain format JSON dan XML).
 -Kurang umum digunakan 
 -Sulit untuk pengembangan selanjutnya karena sedikit sekali referensi mengenai YAML
--Terjadi masalah jika data mengandung whitespace
+-Terjadi masalah jika path mengandung whitespace
+-Jenis response http dibagi berdasrakan mime-type sedangkan mime-type untuk YAML tidak terdaftar
 -PHP memiliki fungsi bawaan untuk mendekode JSON, namun tidak dengan YAML. 
 sumber ref : https://stackoverflow.com/questions/3951047/xml-vs-yaml-vs-json
 ```
